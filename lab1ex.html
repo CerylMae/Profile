@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML (HTML5 here). -->
+<html lang="en"> <!-- Sets the language of the document to English. -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the webpage (UTF-8, which supports a wide range of characters). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive for different screen sizes. The viewport width is set to match the device width. -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Ensures that the page works in legacy Internet Explorer browsers (IE=edge forces the latest version). -->
+    <title>Personal Portfolio</title> <!-- Sets the title of the webpage (appears on the browser tab). -->
+    <link rel="stylesheet" href="lab1.css"> <!-- Links an external CSS file to style the page. -->
+</head>
+<body>
+
+    <!-- Header Section with Navigation Links -->
+    <header>
+        <nav>
+            <ul> <!-- Creates an unordered list for the navigation links. -->
+                <li><a href="#about">About Us</a></li> <!-- Navigation link that jumps to the About Us section. -->
+                <li><a href="#projects">Projects</a></li> <!-- Navigation link that jumps to the Projects section. -->
+                <li><a href="#contact">Contact</a></li> <!-- Navigation link that jumps to the Contact section. -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about"> <!-- Section for "About Us" information. -->
+        <h2>About Us</h2> <!-- Heading for the About Us section. -->
+        <div class="about-container"> <!-- Container div that holds information about both people. -->
+            <!-- Person 1 (Ceryl Mae) -->
+            <div class="about-person">
+                <img src="474258935_1651992562062761_6291755108459145402_n.jpg" alt="Your Photo"> <!-- Image of Ceryl Mae with alt text. -->
+                <h3>Ceryl Mae B. Alingig</h3> <!-- Name of the first person. -->
+                <p> <!-- Brief introduction about Ceryl Mae. -->
+                    Hello! My name is Ceryl Mae B. Alingig, a 20-year-old third-year IT student at Bohol Island State University - Balilihan Campus...
+                </p>
+            </div>
+
+            <!-- Person 2 (France Neña Diana) -->
+            <div class="about-person">
+                <img src="474993946_1119925216175663_49445756871120180_n.jpg" alt="Partner's Photo"> <!-- Image of France Neña with alt text. -->
+                <h3>France Neña Diana A. Gerzon</h3> <!-- Name of the second person. -->
+                <p> <!-- Brief introduction about France Neña Diana. -->
+                    Hi, I’m France Neña Diana Gerzon, a 3rd-year Bachelor of Science in Information Technology (BSIT) student...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects"> <!-- Section for showcasing the projects of both persons. -->
+        <h2>Our Projects</h2> <!-- Heading for the Projects section. -->
+
+        <!-- Projects of Ceryl Mae -->
+        <div class="person-projects">
+            <h3>Ceryl Mae's Projects</h3> <!-- Title for Ceryl's projects. -->
+            <div class="project">
+                <h4>Project 1: Event Poster</h4> <!-- Title of the first project by Ceryl. -->
+                <p>This project was assigned to us in our Multimedia subject...</p> <!-- Description of the first project by Ceryl. -->
+                <img src="432734639_1965722607164044_2970916384434741309_n.jpg" alt="Project 1"> <!-- Image of Project 1. -->
+            </div>
+
+            <div class="project">
+                <h4>Project 2: Boarding Bliss App</h4> <!-- Title of the second project by Ceryl. -->
+                <p>The "Boarding Bliss" is an Android-based mobile application...</p> <!-- Description of the second project by Ceryl. -->
+                <img src="boarding bliss logo.jpg" alt="Project 2"> <!-- Image of Project 2. -->
+            </div>
+
+            <div class="project">
+                <h4>Project 3: Cafe Management System</h4> <!-- Title of the third project by Ceryl. -->
+                <p>This was one of our projects during our first year...</p> <!-- Description of the third project by Ceryl. -->
+                <img src="cms logo.jpg" alt="Project 3"> <!-- Image of Project 3. -->
+            </div>
+        </div>
+
+        <!-- Projects of France Neña Diana -->
+        <div class="person-projects">
+            <h3>France's Projects</h3> <!-- Title for France's projects. -->
+            <div class="project">
+                <h4>Project 1: Bus Booking System</h4> <!-- Title of the first project by France. -->
+                <p>A Bus Booking System is a software application...</p> <!-- Description of the first project by France. -->
+                <img src="Bus-Booking-System.jpg" alt="Project 1"> <!-- Image of Project 1. -->
+            </div>
+
+            <div class="project">
+                <h4>Project 2: Promotional Poster</h4> <!-- Title of the second project by France. -->
+                <p>This project is a tourism promotional poster designed to highlight the beauty...</p> <!-- Description of the second project by France. -->
+                <img src="432699871_1835385900258151_3910003997264186490_n.jpg" alt="Project 2"> <!-- Image of Project 2. -->
+            </div>
+
+            <div class="project">
+                <h4>Project 3: Boarding Bliss App</h4> <!-- Title of the third project by France (same as Ceryl's). -->
+                <p>The "Boarding Bliss" is an Android-based mobile application...</p> <!-- Description of the third project by France (same as Ceryl's). -->
+                <img src="boarding bliss logo.jpg" alt="Project 3"> <!-- Image of Project 3. -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"> <!-- Section for users to contact the creators. -->
+        <h2>Contact Us</h2> <!-- Heading for the Contact Us section. -->
+        <form action="#" method="POST"> <!-- Form for users to send messages. -->
+            <label for="name">Name:</label> <!-- Label for the name input field. -->
+            <input type="text" id="name" name="name" required> <!-- Input field for the user's name. -->
+
+            <label for="email">Email:</label> <!-- Label for the email input field. -->
+            <input type="email" id="email" name="email" required> <!-- Input field for the user's email. -->
+
+            <label for="message">Message:</label> <!-- Label for the message input field. -->
+            <textarea id="message" name="message" required></textarea> <!-- Textarea for the user's message. -->
+
+            <button type="submit">Send Message</button> <!-- Submit button for the form. -->
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer> <!-- Footer section for additional links or contact info. -->
+        <p>Follow us on:</p> <!-- Text inviting users to follow on social media. -->
+        <ul> <!-- Unordered list of social media links. -->
+            <li><a href="https://www.facebook.com/share/1AsqvfHbrN/" target="_blank">France's Facebook</a></li> <!-- Link to France's Facebook page. -->
+            <li><a href="https://www.facebook.com/share/15oJCNwLHP/" target="_blank">Ceryl's Facebook</a></li> <!-- Link to Ceryl's Facebook page. -->
+            <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li> <!-- Link to LinkedIn profile. -->
+        </ul>
+    </footer>
+
+</body>
+</html>
